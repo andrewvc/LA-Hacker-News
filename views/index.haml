@@ -1,0 +1,62 @@
+!!!
+%html
+  :css
+    /* Mini Reset */  
+    html, body, div, form, fieldset, legend, label
+    {margin: 0; padding: 0;}
+    table {border-collapse: collapse; border-spacing: 0; }
+    th, td { text-align: left; vertical-align: top; }
+    h1, h2, h3, h4, h5, h6, th, td, caption { font-weight:normal; }
+    img { border: 0; }
+    
+    html, body {
+      height: 100%;
+      background: #eee;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+      
+    a {
+      color: #ff6600;
+      text-decoration: none;
+      font-weight: bold;
+    }
+ 
+    #main {
+      background: #fff;
+      width: 590px;
+      margin: 20px auto 0px auto;
+      height: 176px;
+    }
+
+    #logo {
+      float: left;
+      display: block;
+      height: 176px;
+      padding-right: 20px;
+    }
+    #content {
+      float: right;
+      padding-top:   0px;
+      padding-right: 0px;
+      letter-spacing: 0.06em;
+    }
+    #content a {
+      display: block;
+      padding: 5px 4px;
+      border-bottom: 1px dotted silver;
+      width: 230px;
+    }
+    #content a:hover {
+      background-color: #ff6600;
+      color: #fff;
+    }
+  %title LA Hacker News
+  %body
+    #main
+      %a#logo{:href => 'http://www.meetup.com/Los-Angeles-Hacker-News/'}
+        %img{:src => 'logo_lg.png'}
+      #content  
+        %a{:href => 'http://www.meetup.com/Los-Angeles-Hacker-News/'}
+          Visit our meetup group
+        %a{:href => 'mailto:info@lahackernews.com'}
+          info@lahackernews.com 

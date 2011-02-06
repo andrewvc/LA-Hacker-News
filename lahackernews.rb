@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  "LA Hacker News!"
+  haml :index
 end
